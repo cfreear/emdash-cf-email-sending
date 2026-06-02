@@ -239,7 +239,7 @@ export default {
   },
 
   routes: {
-    settings: {
+    admin: {
       handler: async (routeCtx, ctx) => {
         const interaction = routeCtx.input as BlockInteraction;
 

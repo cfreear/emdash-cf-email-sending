@@ -29,7 +29,7 @@
 	"admin": {
 		"pages": [
 			{
-				"path": "/settings",
+				"path": "/admin",
 				"label": "CF Email Service",
 				"icon": "mail"
 			}

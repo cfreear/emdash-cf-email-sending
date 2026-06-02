@@ -1,0 +1,34 @@
+{
+  "id": "emdash-cf-email-sending",
+  "version": "0.1.1",
+  "capabilities": [
+    "hooks.email-transport:register",
+    "network:request",
+    "hooks.email-events:register"
+  ],
+  "allowedHosts": [
+    "api.cloudflare.com"
+  ],
+  "storage": {},
+  "hooks": [
+    {
+      "name": "email:deliver",
+      "exclusive": true
+    },
+    "email:afterSend"
+  ],
+  "routes": [
+    "admin",
+    "send-test"
+  ],
+  "admin": {
+    "pages": [
+      {
+        "path": "/admin",
+        "label": "CF Email Service",
+        "icon": "mail"
+      }
+    ],
+    "widgets": []
+  }
+}
