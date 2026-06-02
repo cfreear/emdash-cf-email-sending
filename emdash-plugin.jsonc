@@ -1,0 +1,38 @@
+{
+	"$schema": "./node_modules/@emdash-cms/plugin-cli/schemas/emdash-plugin.schema.json",
+	"name": "Cloudflare Email Sending",
+	"description": "Cloudflare Email Sending support for EmDash CMS",
+	"slug": "emdash-cf-email-sending",
+	"keywords": [
+		"email",
+		"cloudflare"
+	],
+	"repo": "https://github.com/cfreear/emdash-cf-email-sending",
+	"publisher": "did:plc:5htva5ewwisu7gfjou2o4mee",
+	"license": "MIT",
+	"author": {
+		"name": "Christian Freear",
+		"url": "https://www.github.com/cfreear"
+	},
+	"security": {
+		"email": "christianfreear@gmail.com"
+	},
+	"capabilities": [
+		"hooks.email-transport:register",
+		"network:request",
+		"hooks.email-events:register"
+	],
+	"allowedHosts": [
+		"api.cloudflare.com"
+	],
+	"storage": {},
+	"admin": {
+		"pages": [
+			{
+				"path": "/settings",
+				"label": "CF Email Service",
+				"icon": "mail"
+			}
+		]
+	}
+}
