@@ -7,7 +7,7 @@
 /** @type {import("emdash").PluginDescriptor} */
 const descriptor = Object.freeze({
 	"id": "emdash-cf-email-sending",
-	"version": "0.1.1",
+	"version": "0.1.2",
 	"format": "standard",
 	"entrypoint": "@cfreear/emdash-cf-email-sending/sandbox",
 	"capabilities": [
