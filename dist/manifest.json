@@ -1,6 +1,19 @@
 {
   "id": "emdash-cf-email-sending",
   "version": "0.1.1",
+  "declaredAccess": {
+    "network": {
+      "request": {
+        "allowedHosts": [
+          "api.cloudflare.com"
+        ]
+      }
+    },
+    "email": {
+      "events": {},
+      "transport": {}
+    }
+  },
   "capabilities": [
     "hooks.email-transport:register",
     "network:request",

@@ -15,7 +15,7 @@
 		"url": "https://www.github.com/cfreear"
 	},
 	"security": {
-		"email": "christianfreear@gmail.com"
+		"url": "https://github.com/cfreear/emdash-cf-email-sending"
 	},
 	"capabilities": [
 		"hooks.email-transport:register",

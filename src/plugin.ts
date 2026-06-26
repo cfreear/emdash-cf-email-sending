@@ -194,7 +194,7 @@ async function saveSettings(
 }
 
 // ── Plugin export ────────────────────────────────────────────────────────────
-export default {
+const plugin: SandboxedPlugin = {
   hooks: {
     "email:deliver": {
       exclusive: true,
@@ -330,4 +330,6 @@ export default {
       },
     },
   },
-} satisfies SandboxedPlugin;
+};
+
+export default plugin;

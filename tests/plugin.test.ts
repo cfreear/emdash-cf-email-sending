@@ -289,7 +289,7 @@ describe("Cloudflare Email Sending Plugin", () => {
   });
 
   describe("settings route", () => {
-    const adminHandler = plugin.routes?.settings;
+    const adminHandler = plugin.routes?.admin;
 
     it("should render settings and test form on page_load", async () => {
       const { ctx } = makeTestContext({
