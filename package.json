@@ -1,6 +1,6 @@
 {
 	"name": "@cfreear/emdash-cf-email-sending",
-	"version": "0.1.1",
+	"version": "0.1.2",
 	"type": "module",
 	"main": "dist/index.mjs",
 	"exports": {
